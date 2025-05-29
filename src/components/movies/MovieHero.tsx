@@ -71,7 +71,7 @@ const MovieHero: React.FC<MovieHeroProps> = ({ movie }) => {
             </motion.div>
             
             <motion.p 
-              className="text-gray-300 mb-8 max-w-xl line-clamp-3"
+              className="text-gray-300 mb-8 max-w-xl md:line-clamp-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}

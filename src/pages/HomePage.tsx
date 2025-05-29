@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
   const [isFetchingExplore, setIsFetchingExplore] = useState(false);
 
   useEffect(() => {
-    document.title = 'CineVerse - Điểm đến phim của bạn';
+    document.title = 'VietTrailer - Điểm đến phim của bạn';
 
     const fetchInitialMovies = async () => {
       setLoading(true);
@@ -93,7 +93,7 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       {featuredMovie && <MovieHero movie={featuredMovie} />}
 
-      <div className="container mx-auto px-4 pt-8 pb-16">
+      <div className="container mx-auto px-4 pt-8 pb-16 sm:pt-24">
         {/* Trending Movies Slider */}
         {trendingMovies.length > 0 && <MovieSlider title="Đang thịnh hành" movies={trendingMovies} />}
         
